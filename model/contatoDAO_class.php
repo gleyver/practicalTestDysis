@@ -41,7 +41,7 @@ class ContatoDAO
     $answer = $stmt->execute();
 
     // Close connection to database
-    $conn = null;
+    $db->offConnection();
 
     // Verify if insert was okay
     if($answer) return true; // Inserted with successful
@@ -70,7 +70,7 @@ class ContatoDAO
     $answer = $stmt->execute();
 
     // Close connection to database
-    $conn = null;
+    $db->offConnection();
 
     // Verify if insert was okay
     if($answer) return true; // Inserted with successful
@@ -100,7 +100,7 @@ class ContatoDAO
     $answer = $stmt->execute();
 
     // Close connection to database
-    $conn = null;
+    $db->offConnection();
 
     // Verify if insert was okay
     if($answer) return true; // Inserted with successful
@@ -130,6 +130,8 @@ class ContatoDAO
     }
 
     return $contacts;
+
+    $db->offConnection();
   }
 
   /**
@@ -147,7 +149,7 @@ class ContatoDAO
     $stmt->execute();
 
     // Close connection to database
-    $conn = null;
+    $db->offConnection();
 
     if($stmt->rowCount() > 0)
     {
@@ -156,6 +158,7 @@ class ContatoDAO
       }
     }
   }
+
 }
 
 ?>
