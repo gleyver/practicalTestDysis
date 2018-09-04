@@ -1,0 +1,114 @@
+/* CSS */
+
+/* Font import */
+@font-face {
+    font-family: "slabo";
+    src: url("../fonts/slabo/slabo.ttf");
+}
+
+*{
+  padding: 0px;
+  margin: 0px;
+}
+
+/* Main box */
+#main_box
+{
+  width: 580px;
+  height: 350px;
+  border-radius: 25px 25px 25px 25px;
+  background-color: #ccc;
+}
+/* ---------------------------- */
+
+/* Text field area */
+.text_field_area
+{
+  width: 580px;
+  height: 100px;
+  /* background-color: aqua; */
+}
+/* ---------------------------- */
+
+/* Text field's label */
+.label
+{
+  width: 120px;
+  height: 60px;
+  float: left;
+  padding-right: 10px;
+  padding-top: 40px;
+  /* background-color: brown; */
+
+  /* Text */
+  text-align: right;
+  font-weight: bold;
+  font-size: 21px;
+  text-transform: uppercase;
+  color: #000;
+  /* color: #FAFAFA; */
+  text-shadow: 0px 0px 1px #fff;
+  letter-spacing: 2px;
+  font-family: "slabo", verdana;
+}
+/* ---------------------------- */
+
+/* Text field */
+.text_field
+{
+  width: 450px;
+  height: 65px;
+  padding-top: 35px;
+  float: left;
+  /* background-color: green; */
+}
+.text_field input
+{
+  width: 420px;
+  height: 25px;
+  border-radius: 5px 5px 5px 5px;
+
+  /* Text */
+  text-align: center;
+  font-size: 18px;
+  color: #000;
+  text-shadow: 0px 0px 1px #212;
+  letter-spacing: 1px;
+  font-family: "slabo", verdana;
+
+}
+/* ---------------------------- */
+
+/* Button area */
+#button_area
+{
+  width: 260px;
+  height: 50px;
+  padding-left: 320px;
+  border-radius: 0px 0px 25px 25px;
+  /* background-color: aqua; */
+}
+#button_area input
+{
+  transition: 2s;
+  width: 100px;
+  height: 30px;
+  float: left;
+  margin-left: 20px;
+  border-radius: 10px 10px 10px 10px;
+  background-color: #455A64;
+
+  /* Text */
+  font-size: 16px;
+  color: #fff;
+  font-weight: bold;
+  text-shadow: 0px 0px 2px #000;
+  letter-spacing: 1px;
+  font-family: "slabo", verdana;
+}
+#button_area input:hover
+{
+  transition: 1s;
+  box-shadow: 0px 0px 5px #212;
+}
+/* ---------------------------- */

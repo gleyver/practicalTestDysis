@@ -1,0 +1,6 @@
+DataBase
+
+server = "localhost";
+database = "db_contato";
+user = "root";
+password = "";
